@@ -1,0 +1,5 @@
+<%= render '/refinery/content_page' %>
+<%= form_for Upload.new, url: {path: "upload"},remote: true, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :upload %>
+  <%= form.submit %>
+<% end %>
